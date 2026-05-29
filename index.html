@@ -10,15 +10,21 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-      overflow: auto;
-      background: linear-gradient(160deg, #fdf6f0 0%, #fce4ec 50%, #e8f5e9 100%);
-      position: relative;
-    }
+  min-height: 100vh;
+  padding: 2rem;
+  overflow-x: hidden;
+  background: linear-gradient(160deg, #fdf6f0 0%, #fce4ec 50%, #e8f5e9 100%);
+  position: relative;
+  display: block;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 
     /* --- éléments flottants --- */
     .floaties { position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
